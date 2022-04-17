@@ -1,7 +1,8 @@
+from timeit import default_timer
+
 import numpy as np
 from netgen.read_meshio import ReadViaMeshIO
 from pykdtree.kdtree import KDTree
-from timeit import default_timer
 
 
 def is_inside_tet(query_point, v1, v2, v3, v4):
